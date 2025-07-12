@@ -38,9 +38,10 @@ jobs:
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
+        context: ./pawfect-registry-service
         push: true
         tags: pawfectcareregistry-hybha2fbbedqcqe0.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_316cbd9b23204ed3bb1479d1f7729abe }}/pawfect-registry:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./pawfect-registry-service/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
