@@ -2,7 +2,7 @@ package pe.upc.pawfectcaremicroservices.registry_service;
 
 import org.junit.jupiter.api.Test;
 
-class IamServiceApplicationTests {
+class RegistryServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
